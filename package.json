@@ -1,0 +1,11 @@
+{
+  "name": "intellect-schema",
+  "version": "1.0.0",
+  "description": "This is just a database Schema for intellect learning path.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raghav Mishra",
+  "license": "ISC"
+}

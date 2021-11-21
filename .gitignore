@@ -1,0 +1,3 @@
+# Excluding dependency files 
+node_modules/
+
