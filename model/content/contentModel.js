@@ -36,12 +36,15 @@ var contentSchema = new Schema({
     },
     order: {
         type: Number,
-        min: 0,
+        min: 1,
         required: [true, "Order is required"]
     }
 
 
 })
+
+// ==== Adding additional index on session for quick filtering ====
+contentSchema.index({session: 1}) 
 
 
 module.exports = mongoose.model("content", contentSchema, "content")

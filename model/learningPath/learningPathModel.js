@@ -20,6 +20,7 @@ var learningPathSchema = new Schema({
         type: String,
         required: [true, "Time to complete is required"]
     }
+    
 })
 
 

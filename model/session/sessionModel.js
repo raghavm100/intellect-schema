@@ -16,17 +16,21 @@ var sessionSchema = new Schema({
         type: String,
         required: [true, "Description of the session is required"]
     },
-    path: {
+    learningPath: {
         type: Schema.type.ObjectId,
         ref: "learningPath",
         required: [true, "Leatning path is required"]
     },
     order: {
         type: Number,
-        min: 0,
+        min: 1,
         required: [true, "Order value is required for session"]
     }
 })
 
+
+
+// ==== Adding additional index on learning path for quick filtering ====
+contentSchema.index({learningPath: 1}) 
 
 module.exports = mongoose.model("session", sessionSchema, "session")
